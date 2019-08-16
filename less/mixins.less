@@ -1,1 +1,21 @@
 // Mixins Here
+.hoverinverse () {
+    color: @btn-bg-color;
+    background-color: @nav-border;
+}
+
+.flex-alignic () {
+    display: flex;
+    align-items: center;
+}
+// Parametric Mixin
+.button (@color, @background) {
+    height: 4rem;
+    width: 30%;
+    border-radius: 10px;
+    color: @color;
+    background-color: @background;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+}

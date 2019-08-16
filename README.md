@@ -34,13 +34,30 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive websites are usually made with breakpoints at the 6 most common screen widths/sizes, and you create a layout for each. It allows for more control over your site than responsive design does, but it takes more work to initialize and maintain over time. A lot of times, adaptive web design is used to refactor an existing site to make it more mobile-friendly, without having to completely re-structure it. But, if your device is outside of the scope of the 6 breakpoints it was created for, the design can behave unexpectedly.
+Responsive websites allow you to create one design for a site, and make it adjust to different breakpoints (screen sizes) using media queries. You don't have to design completely different layouts, like you do with adaptive. Responsive websites can be a bit faster to load than adaptive sites, because only one layout is being loaded, instead of multiple ones.
+
+
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first means to design a website with mobile phones in mind FIRST, and then design your breakpoints up from there on your media queries. Google recommends mobile-first design, because many people around the world use mobile devices more than computers, nowadays.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Most browsers standardize the base font-size at 16px. A rem is a measure relative to the base font-size of the site. So, if 16px is the base, 62.5% of that is 10px. Why don't we just write 10px, you ask? Imagine how 10px will look on a bunch of different screen sizes. It might be fine on a mobile screen, but it would be tiny on a huge monitor with a high pixel density. Therefore, if we use percentages of the base-font, it will be responsive, and scale up and down relative to the screen that's viewing it. 
+
+
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is a way to write CSS in a quicker, more organized way. Imagine a file cabinet. In regular CSS, you would have to make a new file folder for every parent element and each child element that you wanted to specify styles for. In a preprocessor, you would only need to create one folder for every parent element, and place all child element styles inside each parent folder. This makes it easier to search for styles belonging to each parent element, and therefore, helps to organize and shorten the complexity and size (length) of your CSS "file cabinet."
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Favorite concept: The idea of nesting sounds amazing to me, but putting it into practice is hard. It's like I'm still stuck halfway between writing vanilla CSS and wanting to nest everything. Haha!
+Least favorite: The concept of having multiple .less files, one for each section, basically, is super confusing to me. I forget where things should go, and which page they should not go on, lol. It will just take some getting used to.
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
