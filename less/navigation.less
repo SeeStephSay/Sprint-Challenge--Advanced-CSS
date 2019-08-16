@@ -1,5 +1,11 @@
 // Navigation code here
 
+/* .wrapper {
+    @media @phone {
+        
+    }
+} */
+
 nav {
     .flex-alignic(); 
     flex-direction: column;
@@ -12,18 +18,29 @@ nav {
         margin: 15px 
     }
     a {
-        
         font-size: 1.5rem;
         text-decoration: none;
         color: @nav-font;
         padding: 15px 15px;
+        @media @phone {
+            padding: 10px;
+        }
+    }
+    @media @phone {
+        width: 100%;
     }
 }
 
 header {
     img {
         border-radius: 5px;
-    }
+        display: flex;
+        @media @phone {
+            width: 100%;
+            height: auto;
+            }
+    }  
+    
 }
 
 
