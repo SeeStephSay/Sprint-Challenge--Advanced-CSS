@@ -220,6 +220,12 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home {
+  /********* HEADER INTRO LIFT OFF SECTION **************/
+  /********* LIFT OFF SPACE IMAGES SECTION **************/
+  /********* VISIT PLANETS TEXT SECTION **************/
+  /********* WALK SECTION **************/
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -265,8 +271,8 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk {
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    padding: 0;
     flex-direction: column-reverse;
   }
 }
@@ -278,6 +284,14 @@ footer {
 }
 .home .walk-text p {
   margin-bottom: 26px;
+}
+@media (max-width: 500px) {
+  .home .walk-text {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 15px;
+    flex-direction: column;
+  }
 }
 .home .btn {
   height: 4rem;
@@ -297,18 +311,24 @@ footer {
   color: #22283A;
   background-color: #F1F1F1;
 }
-.home .walk-img {
-  width: 46%;
-  margin-left: 4%;
+@media (max-width: 500px) {
+  .home .btn {
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
 }
-.home img {
+.home .float {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
+  margin-left: 4%;
 }
 @media (max-width: 500px) {
   .home .float {
-    width: 100%;
-    margin: 0 auto;
+    margin: 0;
+    padding: 5px 5px;
   }
+}
+.home img {
+  width: 100%;
+  border-radius: 20px;
 }
