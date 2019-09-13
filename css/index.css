@@ -166,7 +166,10 @@ nav {
   flex-direction: column;
   width: 100%;
   background: rgba(246, 246, 246, 0.75);
+  /*'rgb' instead of F6F6F6/@wild-sand/@nav-bg, so 'a' can set opacity level of background color. */
   padding-bottom: 15px;
+  position: fixed;
+  margin-bottom: 12%;
 }
 @media (max-width: 500px) {
   nav {
@@ -184,19 +187,23 @@ nav a {
   color: #454A59;
   padding: 15px 15px;
 }
+nav a:hover {
+  color: silver;
+}
 @media (max-width: 500px) {
   nav a {
     padding: 10px;
   }
 }
 header img {
+  padding-top: 12%;
   border-radius: 5px;
-  display: flex;
 }
 @media (max-width: 500px) {
   header img {
     width: 100%;
     height: auto;
+    padding-top: 24%;
   }
 }
 footer {
@@ -239,7 +246,7 @@ footer {
   }
 }
 @media (max-width: 500px) {
-  .home .space-images .rocket {
+  .home .space-images .blast {
     width: 100%;
   }
 }
@@ -253,7 +260,7 @@ footer {
   margin-top: 13px;
 }
 .home .walk {
-  margin-top: 60px;
+  margin-top: 30px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
@@ -262,7 +269,7 @@ footer {
 @media (max-width: 500px) {
   .home .walk {
     width: 100%;
-    padding: 0;
+    padding: 20px;
     flex-direction: column-reverse;
   }
 }
@@ -311,6 +318,12 @@ footer {
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
