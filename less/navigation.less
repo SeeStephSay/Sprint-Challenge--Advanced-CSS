@@ -1,1 +1,38 @@
 // Navigation code here
+
+nav {
+    .flex-align-icon(); 
+    flex-direction: column;
+    width: 100%;
+    background: rgba(246,246,246,0.75); //rgb instead of #F6F6F6/@wild-sand/@nav-bg, so a can set opacity of background color.
+    padding-bottom: 15px;
+    @media @phone {
+        width: 100%;
+    }
+    h1 {
+        color: @header-font-color;
+        font-size: 3.7rem;
+        margin: 15px 
+    }
+    a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: @nav-font;
+        padding: 15px 15px;
+        @media @phone {
+            padding: 10px;
+        }
+    }
+}
+
+header {
+    img {
+        border-radius: 5px;
+        display: flex;
+        @media @phone {
+            width: 100%;
+            height: auto;
+            }
+    }  
+    
+}
